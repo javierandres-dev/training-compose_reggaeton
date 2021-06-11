@@ -1,0 +1,117 @@
+/* CUSTOM PROPERTIES
+  ============================= */
+:root {
+  --ff-base: '';
+  --fs-base: 1.6rem;
+  --fw-base: 400;
+  --c-dark: '';
+}
+/* BASE
+  ============================= */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--ff-base);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--c-dark);
+}
+main {
+}
+main button {
+  display: block;
+  margin: auto;
+}
+aside {
+}
+aside iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+/* GLOBALS
+  ============================= */
+.container {
+  width: 100%;
+}
+/* MEDIA QUERIES
+  ============================= */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+/* DEVELOPER
+  ============================= */
+.dev {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.dev a {
+  color: #05a6f1;
+}
+.dev a:link {
+  text-decoration: none;
+}
+.dev a:visited {
+  font-style: italic;
+}
+.dev a:hover {
+  text-decoration: underline;
+}
+.dev a:active {
+  font-style: italic;
+  text-decoration: underline;
+  color: gray;
+}
+.dev .top a,
+.dev .bottom a {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.dev .top a {
+  justify-content: flex-start;
+}
+.dev .bottom a {
+  justify-content: flex-end;
+}
+.dev span {
+  color: gray;
+}
+.dev img {
+  width: 32px;
+  margin: 0 8px;
+}
