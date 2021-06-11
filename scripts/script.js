@@ -28,15 +28,15 @@ const showWords = () => {
   const $caption = d.createElement('caption');
   $caption.textContent = 'palabras base';
   $words.appendChild($caption);
-  groupsWords.map((group) => {
+  for (let i = 0; i < groupsWords.length; i++) {
     const $tr = d.createElement('tr');
-    for (const word of group) {
+    for (let j = 0; j < groupsWords.length; j++) {
       const $td = d.createElement('td');
-      $td.textContent = word;
+      $td.textContent = groupsWords[j][i];
       $tr.appendChild($td);
     }
     $words.appendChild($tr);
-  });
+  }
 };
 
 const getRandom = (min, max) => {

@@ -1,8 +1,12 @@
 /* CUSTOM PROPERTIES
   ============================= */
 :root {
-  --ff-base: '';
+  --ff-base: sans-serif;
+  --fs-xs: 0.8rem;
+  --fs-s: 1.2rem;
   --fs-base: 1.6rem;
+  --fs-l: 2rem;
+  --fs-xl: 2.4rem;
   --fw-base: 400;
   --c-dark: '';
 }
@@ -31,6 +35,15 @@ main button {
   margin: auto;
 }
 aside {
+}
+aside table {
+  margin: 1rem 0;
+}
+aside table caption {
+  font-size: var(--fs-s);
+}
+aside table tr {
+  font-size: var(--fs-xs);
 }
 aside iframe {
   width: 100%;
