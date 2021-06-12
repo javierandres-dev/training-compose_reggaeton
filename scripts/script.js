@@ -25,17 +25,19 @@ d.addEventListener('DOMContentLoaded', () => {
 const eventsListener = () => $btnCompose.addEventListener('click', getLyric);
 
 const showWords = () => {
-  const $caption = d.createElement('caption');
-  $caption.textContent = 'palabras base';
+  const $caption = d.createElement('caption'),
+    $tbody = d.createElement('tbody');
+  $caption.textContent = 'cuadro reggaeton';
   $words.appendChild($caption);
-  for (let i = 0; i < groupsWords.length; i++) {
+  for (let i = 0; i < groupsWords[i].length; i++) {
     const $tr = d.createElement('tr');
     for (let j = 0; j < groupsWords.length; j++) {
       const $td = d.createElement('td');
       $td.textContent = groupsWords[j][i];
       $tr.appendChild($td);
     }
-    $words.appendChild($tr);
+    $tbody.appendChild($tr);
+    $words.appendChild($tbody);
   }
 };
 
@@ -52,5 +54,5 @@ const getLyric = () => {
     const word = group[idx];
     lyric += word.replace('r', 'l') + ' ';
   });
-  $lyric.textContent = lyric;
+  $lyric.textContent = `🎹 ${lyric} 🎼`;
 };
