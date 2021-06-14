@@ -68,8 +68,13 @@ main button:focus {
   outline: none;
 }
 
+main .instructions {
+  color: #000;
+}
+
 aside p {
   text-align: left;
+  color: #000;
 }
 
 aside p span {
@@ -78,13 +83,14 @@ aside p span {
 }
 
 aside table {
-  width: 100%;
+  width: min(100%, 32rem);
+  margin: auto;
   border-collapse: collapse;
+  text-transform: uppercase;
 }
 
 aside table caption {
   font-size: var(--fs-s);
-  text-transform: uppercase;
   color: var(--c-colorful);
 }
 
@@ -96,7 +102,7 @@ aside table tr {
 aside table tr th,
 aside table tr td {
   border: thin solid var(--c-lightgray);
-  padding: 0.5rem 0.05rem;
+  padding: 0.5rem 0.2rem;
 }
 
 aside table tr td:nth-child(even) {
@@ -104,10 +110,10 @@ aside table tr td:nth-child(even) {
 }
 
 aside iframe {
-  width: 32rem;
+  width: min(100%, 32rem);
   height: 18rem;
   display: block;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 /* GLOBALS
@@ -125,8 +131,7 @@ aside iframe {
   }
 
   aside table {
-    width: 48rem;
-    margin: auto;
+    width: 100%;
   }
 
   aside table caption {
@@ -139,7 +144,7 @@ aside iframe {
 
   aside table tr th,
   aside table tr td {
-    padding: 0.5rem 0.3rem;
+    padding: 0.5rem;
   }
 
   aside iframe {
@@ -153,22 +158,14 @@ aside iframe {
     max-width: 720px;
   }
 
-  aside table {
-    width: 64rem;
-  }
-
   aside p,
   aside table caption {
     font-size: var(--fs-l);
   }
 
-  aside table tr {
-    font-size: var(--fs-base);
-  }
-
   aside table tr th,
   aside table tr td {
-    padding: 1rem 0.4rem;
+    padding: 1rem;
   }
 
   aside iframe {
@@ -184,6 +181,14 @@ aside iframe {
 
   aside p {
     text-align: center;
+  }
+
+  aside table {
+    width: 84rem;
+  }
+
+  aside table tr {
+    font-size: var(--fs-base);
   }
 }
 
